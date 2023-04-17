@@ -11,7 +11,7 @@ export const MainnetConfig = new AvaNetwork(
 
 export const TestnetConfig = new AvaNetwork(
     'Fuji',
-    'https://api.avax-test.network:443',
+    'https://testnet.zera.vision:443',
     5,
     'https://explorerapi.avax-test.network',
     'https://explorer-xp.avax-test.network',
