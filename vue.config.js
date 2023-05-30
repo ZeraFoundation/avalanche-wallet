@@ -9,7 +9,7 @@ module.exports = {
          * @link https://cli.vuejs.org/guide/mode-and-env.html#modes
          */
         https: !process.env.USE_HTTP,
-        port: 5001,
+        port: 5000,
     },
     configureWebpack: {
         optimization: {
