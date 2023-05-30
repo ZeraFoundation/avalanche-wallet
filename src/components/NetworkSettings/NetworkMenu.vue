@@ -5,7 +5,7 @@
         :connected="status === 'connected'"
         @keydown.esc="closeMenu"
     >
-        <div class="toggle_but" @click="toggleMenu" :testnet="isTestnet">
+        <div class="toggle_but"  :testnet="isTestnet">
             <span
                 :style="{
                     backgroundColor: connectionColor,
@@ -29,47 +29,47 @@
             <!--            </button>-->
             <!--            <button v-else>{{ $t('network.status2') }}</button>-->
         </div>
-        <transition name="fade">
-            <div class="network_dispose_bg" v-if="isActive" key="bg" @click="closeMenu"></div>
-        </transition>
-        <transition name="slide_right">
-            <div class="network_body" v-if="isActive" key="body">
-                <div class="header" data-cy="custom-network-option">
-                    <template v-if="page === 'list'">
-                        <h4>{{ $t('network.title') }}</h4>
-                        <button
-                            @click="viewCustom"
-                            class="button_secondary"
-                            data-cy="create-custom-option"
-                        >
-                            {{ $t('network.custom') }}
-                        </button>
-                    </template>
-                    <template v-if="page === 'custom'">
-                        <h4>{{ $t('network.title2') }}</h4>
-                        <button @click="viewList" class="tab_cancel">
-                            {{ $t('network.cancel') }}
-                        </button>
-                    </template>
-                    <template v-if="page === 'edit'">
-                        <h4>{{ $t('network.title3') }}</h4>
-                        <button @click="viewList" class="tab_cancel">
-                            {{ $t('network.cancel') }}
-                        </button>
-                    </template>
-                </div>
+<!--        <transition name="fade">-->
+<!--            <div class="network_dispose_bg" v-if="isActive" key="bg" @click="closeMenu"></div>-->
+<!--        </transition>-->
+<!--        <transition name="slide_right">-->
+<!--            <div class="network_body" v-if="isActive" key="body">-->
+<!--                <div class="header" data-cy="custom-network-option">-->
+<!--                    <template v-if="page === 'list'">-->
+<!--                        <h4>{{ $t('network.title') }}</h4>-->
+<!--                        <button-->
+<!--                            @click="viewCustom"-->
+<!--                            class="button_secondary"-->
+<!--                            data-cy="create-custom-option"-->
+<!--                        >-->
+<!--                            {{ $t('network.custom') }}-->
+<!--                        </button>-->
+<!--                    </template>-->
+<!--                    <template v-if="page === 'custom'">-->
+<!--                        <h4>{{ $t('network.title2') }}</h4>-->
+<!--                        <button @click="viewList" class="tab_cancel">-->
+<!--                            {{ $t('network.cancel') }}-->
+<!--                        </button>-->
+<!--                    </template>-->
+<!--                    <template v-if="page === 'edit'">-->
+<!--                        <h4>{{ $t('network.title3') }}</h4>-->
+<!--                        <button @click="viewList" class="tab_cancel">-->
+<!--                            {{ $t('network.cancel') }}-->
+<!--                        </button>-->
+<!--                    </template>-->
+<!--                </div>-->
 
-                <transition name="fade" mode="out-in">
-                    <ListPage v-if="page === 'list'" @edit="onedit"></ListPage>
-                    <CustomPage v-if="page === 'custom'" @add="addCustomNetwork"></CustomPage>
-                    <EditPage
-                        v-if="page === 'edit'"
-                        :net="editNetwork"
-                        @success="networkUpdated"
-                    ></EditPage>
-                </transition>
-            </div>
-        </transition>
+<!--                <transition name="fade" mode="out-in">-->
+<!--                    <ListPage v-if="page === 'list'" @edit="onedit"></ListPage>-->
+<!--                    <CustomPage v-if="page === 'custom'" @add="addCustomNetwork"></CustomPage>-->
+<!--                    <EditPage-->
+<!--                        v-if="page === 'edit'"-->
+<!--                        :net="editNetwork"-->
+<!--                        @success="networkUpdated"-->
+<!--                    ></EditPage>-->
+<!--                </transition>-->
+<!--            </div>-->
+<!--        </transition>-->
     </div>
 </template>
 <script lang="ts">
@@ -170,11 +170,11 @@ export default class NetworkMenu extends Vue {
     border-radius: 6px;
     position: relative;
     align-items: center;
-    cursor: pointer;
+    //cursor: pointer;
 
-    &:hover {
-        background-color: var(--bg-light);
-    }
+    //&:hover {
+    //    background-color: var(--bg-light);
+    //}
 
     $dotW: 8px;
     span {

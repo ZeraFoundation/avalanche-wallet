@@ -1,6 +1,6 @@
 import { AvaNetwork } from '@/js/AvaNetwork'
 
-export const MainnetConfig = new AvaNetwork(
+export const TestnetConfig = new AvaNetwork(
     'Mainnet',
     'https://api.avax.network:443',
     1,
@@ -9,7 +9,7 @@ export const MainnetConfig = new AvaNetwork(
     true
 )
 
-export const TestnetConfig = new AvaNetwork(
+export const MainnetConfig = new AvaNetwork(
     'Fuji',
     'https://testnet.zera.vision:443',
     5,

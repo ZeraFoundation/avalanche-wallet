@@ -366,7 +366,7 @@ const assets_module: Module<AssetsState, RootState> = {
             const res = await avm.getAssetDescription('AVAX')
             const id = bintools.cb58Encode(res.assetID)
             state.AVA_ASSET_ID = id
-            const asset = new AvaAsset(id, res.name, res.symbol, res.denomination)
+            const asset = new AvaAsset(id, res.name="ZERA", res.symbol="ZERA", res.denomination)
             commit('addAsset', asset)
         },
 
@@ -449,7 +449,7 @@ const assets_module: Module<AssetsState, RootState> = {
             // get info about the asset
             const desc = await ava.XChain().getAssetDescription(assetId)
             const newAsset = new AvaAsset(assetId, desc.name, desc.symbol, desc.denomination)
-
+            console.log("test-q", newAsset)
             await commit('addAsset', newAsset)
             return desc
         },
