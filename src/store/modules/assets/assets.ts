@@ -449,7 +449,6 @@ const assets_module: Module<AssetsState, RootState> = {
             // get info about the asset
             const desc = await ava.XChain().getAssetDescription(assetId)
             const newAsset = new AvaAsset(assetId, desc.name, desc.symbol, desc.denomination)
-            console.log("test-q", newAsset)
             await commit('addAsset', newAsset)
             return desc
         },
