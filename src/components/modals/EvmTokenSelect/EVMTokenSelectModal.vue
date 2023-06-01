@@ -5,7 +5,7 @@
                 <div class="token_row" @click="select('native')">
                     <img src="/img/avax_icon_circle.png" class="col_img" />
                     <div class="col_name">
-                        <p>AVAX</p>
+                        <p>ZERA</p>
                         <p>Avalanche</p>
                     </div>
                     <p class="col_bal">{{ avaxBalance.toLocaleString() }}</p>
