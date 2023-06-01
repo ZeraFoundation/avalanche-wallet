@@ -21,7 +21,7 @@ module.exports = {
         },
     },
     pwa: {
-        name: 'ZERA Wallet',
+        name: 'ZRA Wallet',
         manifestOptions: {
             start_url: '/',
         },

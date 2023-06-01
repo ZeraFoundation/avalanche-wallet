@@ -6,7 +6,7 @@
         </div>
         <p class="name_col not_mobile">
             {{ name }}
-<!--            ({{ symbol }})-->
+            ({{ symbol }})
             <span v-if="!isAvaxToken">ANT</span>
         </p>
         <p class="name_col mobile_only">{{ symbol }}</p>

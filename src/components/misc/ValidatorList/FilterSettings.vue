@@ -14,7 +14,7 @@
                             @input="onInputChange"
                             v-model="availableSpace"
                         />
-                        <p>ZERA</p>
+                        <p>ZRA</p>
                     </div>
                 </div>
                 <div class="duration">
