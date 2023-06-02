@@ -1,14 +1,5 @@
 <template>
-    <v-banner sticky class="url_banner" color="#f00" ref="banner">
-        <template v-slot:default>
-            <fa icon="exclamation-triangle"></fa>
-            Make sure the URL is
-            <b>wallet.avax.network</b>
-            <button @click="dismiss" class="dismiss_but" data-cy="dismiss_banner">
-                <fa icon="times"></fa>
-            </button>
-        </template>
-    </v-banner>
+<span></span>
 </template>
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'

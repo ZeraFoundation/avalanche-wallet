@@ -234,7 +234,7 @@ export default class FormC extends Vue {
     }
 
     get symbol(): string {
-        if (this.formToken === 'native') return 'AVAX'
+        if (this.formToken === 'native') return 'ZRA'
         return this.formToken.data.symbol
     }
 

@@ -1,7 +1,8 @@
 <template>
-    <div class="network_warning" :visible="isVisible">
-        <p>{{ $t('network.not_mainnet') }}</p>
-    </div>
+    <span></span>
+<!--    <div class="network_warning" :visible="isVisible">-->
+<!--        <p>{{ $t('network.not_mainnet') }}</p>-->
+<!--    </div>-->
 </template>
 <script lang="ts">
 import { AvaNetwork } from '@/js/AvaNetwork'

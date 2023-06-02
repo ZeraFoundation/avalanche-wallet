@@ -26,7 +26,7 @@
 import { DAY_MS, MINUTE_MS } from '../../../constants'
 import { Component, Prop, Vue, Watch } from 'vue-property-decorator'
 
-const MIN_STAKE_DURATION = DAY_MS * 14
+const MIN_STAKE_DURATION = DAY_MS * 1
 
 @Component
 export default class DateForm extends Vue {
