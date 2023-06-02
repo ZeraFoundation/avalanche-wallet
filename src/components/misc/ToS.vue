@@ -1,9 +1,9 @@
 <template>
-    <p>
-        By using this application you agree to the
-        <router-link to="/legal">Terms of Use</router-link>
-        .
-    </p>
+<!--    <p>-->
+<!--        By using this application you agree to the-->
+<!--        <router-link to="/legal">Terms of Use</router-link>-->
+<!--        .  11-->
+<!--    </p>-->
 </template>
 <style scoped lang="scss">
 p {

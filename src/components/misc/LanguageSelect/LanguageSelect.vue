@@ -1,11 +1,12 @@
 <template>
     <div class="sel_locale">
         <country-flag :country="flag" size="small" class="flag"></country-flag>
-        <select v-model="locale">
-            <option v-for="item in items" :key="item.code" :value="item.code">
-                {{ item.nativeName }}
-            </option>
-        </select>
+        <span style="margin-left: 10px">English</span>
+<!--        <select v-model="locale">-->
+<!--            <option v-for="item in items" :key="item.code" :value="item.code">-->
+<!--                {{ item.nativeName }}-->
+<!--            </option>-->
+<!--        </select>-->
     </div>
 </template>
 <script lang="ts">
@@ -96,9 +97,9 @@ export default class LanguageSelect extends Vue {
     position: relative;
     overflow: hidden;
 
-    &:hover {
-        opacity: 0.5;
-    }
+    //&:hover {
+    //    opacity: 0.5;
+    //}
 }
 
 .flag {
